@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Retro Food</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/retrowave_sun.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/retrofood.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript" src="assets/js/lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <nav class="container">
+            <div class="brand">
+                <a href="#home" id="logo"><img src="assets/img/retrowave_sun.png" alt="Retro Food" ></a>
+                <a href="#home" id="brand">Retro Food</a>
+            </div>
+            <ul id="navigation">
+                <!-- <li>
+                    <div id="marker"></div>
+                </li> -->
+                <li><a data-page="header" href="#home">Home</a></li>
+                <li><a data-page="menu" href="#menu">Menu</a></li>
+                <li><a data-page="delivery" href="#delivery">Delivery</a></li>
+                <li><a data-page="chefs" href="#chefs">Chefs</a></li>
+                <li><a data-page="about" href="#about">About</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+    </nav>
+    <header id="header" class="header">
+        <div class="banner" id="home">
+            <h1><span class="retro" data-text="Retro">Retro</span><span class="food" data-text="Food">Food</span></h1>
+            <p class="accent">1984</p>
+            <p class="slogan">Designed To Bring The Past Back</p>
+            <img id="triangle1" class="blink" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg" alt="">
+            <img id="triangle2" class="glow" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/triangle.svg" alt="">
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="container menu" id="menu">
+            <div class="menu-title">
+                <h1>menu</h1>
+            </div>
+            <div id="menu-list">
+                <div class="glass fade-in">
+                    <img class="menu-img" id="dishes" src="assets/img/neonburger.png" alt="">
+                </div>
+                <div class="glass fade-in">
+                    <img class="menu-img" id="drinks" src="assets/img/neondrink.png" alt="">
+                </div>
+                <div class="glass fade-in">
+                    <img class="menu-img" id="desserts" src="assets/img/neondonut.png" alt="">
+                </div>
+            </div>
+            <div class="bg-menu-modal">
+                    <div class="menu-modal" id="dishes-modal">
+                        <div class="modal-heading">
+                            <h2>Dishes</h2>
+                            <button class="close-button">&times;</button>
+                        </div>
+                        <div class="dishes-list">
+                            <div id="burger">
+                                <h4>Burger</h4>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/burger-boeuf-1024x1004.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Hamburger</h5>
+                                            <p>Salad, tomatoes, marinated beef, pickled onions, cheddar, pickles</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>10.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/burger-poulet-1024x1004.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Chicken burger</h5>
+                                            <p>Salad, tomatoes, marinated braised chicken, emmental cheese, white sauce</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>10.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/black-hamburger-2856548_1280.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Black Burger</h5>
+                                            <p>charcoal bread, salad, tomatoes, cheddar cheese, beef prepared with tomato caviar, comté, provencal herbs, onions</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>12.50$</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="pizza">
+                                <h4>Pizza</h4>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/three-cheese-lovers-pizza.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Three cheese pizza</h5>
+                                            <p>Tomato sauce, grated Parmesan cheese, sharp Cheddar cheese, Mozzarella cheese</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>11.99$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/pepperoni.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Pepperoni pizza</h5>
+                                            <p>Tomato sauce, Pepperoni,grated Parmesan cheese, sharp Cheddar cheese, Beef</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>11.99$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/cheese-lovers-lge-pizzajpg.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>white sauce pizza</h5>
+                                            <p>White sauce, grated Parmesan cheese, sharp Cheddar cheese, Chicken</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>11.99$</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal" id="drinks-modal">
+                        <div class="modal-heading">
+                            <h2>Drinks</h2>
+                            <button class="close-button">&times;</button>
+                        </div>
+                        <div class="drinks-list">
+                            <div id="milkshake">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/Donut-Shake-456x650.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Chocoshake</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>6.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/coockiemilk.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Cookiemilk</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>6.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/oreo-milkshake-4.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Oreomilk</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>6.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/banana-milkshake.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Bananashake</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>6.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/raspberry-milkshake.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>raspberryshake</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>6.50$</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal" id="desserts-modal">
+                        <div class="modal-heading">
+                            <h2>Desserts</h2>
+                            <button class="close-button">&times;</button>
+                        </div>
+                        <div class="desserts-list">
+                            <div id="pie">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/apple.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Apple pie</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>7.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/strawberry.jpg" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Strawberry pie</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>7.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/stbpie.PNG" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>Blueberry pie</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>7.50$</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img class="food-img" src="assets/img/cheesecacke.PNG" alt="Hamburger">
+                                        </div>
+                                        <div class="left">
+                                            <h5>cheesecake</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id optio sit nesciunt architecto consequuntur est.</p>
+                                        </div>
+                                        <div class="right">
+                                            <p>7.50$</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="container delivery" id="delivery">
+            <div class="section-content">
+                <div>
+                    <img id="delivery-img" class="slide-in from-left" src="assets/img/delivery63.jpg" alt="">
+                </div>
+                <div>
+                    <h2>Delivery</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloremque ut ipsum libero cum dolor blanditiis! Eos, non eveniet culpa et laborum quos esse doloremque? 
+                        Vel, explicabo. Laudantium necessitatibus sint itaque.
+                    </p>
+            </div>
+            </div>
+        </section>
+        <section class="container chefs" id="chefs">
+            <div class="section-title">
+                <h1>Our Elite Brigade</h1>
+            </div>
+            <div class="section-content">
+                <div class="chef">
+                    <img id="chef-1" class="slide-in from-left" src="assets/img/Gordon-Ramsay--.jpg" alt="Grodon Ramsey">
+                    <div class="slide-in from-right">
+                        <h3>Gordon Ramsey</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ipsam, 
+                            eligendi ipsa iste illo assumenda nulla debitis ut quia nam delectus quaerat, 
+                            id saepe provident quos, impedit voluptatibus officiis ipsum!
+                        </p>
+                    </div>
+                </div>
+                <div class="chef">
+                    <div class="slide-in from-left">
+                        <h3>Graham Elliot</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ipsam, 
+                            eligendi ipsa iste illo assumenda nulla debitis ut quia nam delectus quaerat, 
+                            id saepe provident quos, impedit voluptatibus officiis ipsum!
+                        </p>
+                    </div>
+                    <img id="chef-2" class="slide-in from-right" src="assets/img/Graham-Elliot-.jpeg" alt="Graham Elliot">
+                </div>
+            </div>
+        </section>
+        <section class="container about" id="about">
+            <div class="section-title">
+                <h1>All you need to know about us</h1>
+            </div>
+            <div class="section-content">
+                <div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Error culpa, assumenda vero reiciendis est mollitia tempora sunt reprehenderit itaque!
+                            Nihil explicabo maxime ipsa ratione tenetur exercitationem libero deleniti quia blanditiis?
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Error culpa, assumenda vero reiciendis est mollitia tempora sunt reprehenderit itaque!
+                            Nihil explicabo maxime ipsa ratione tenetur exercitationem libero deleniti quia blanditiis?
+                        </p>
+                    </div>
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.8948995079538!2d-0.11359834180486973!3d51.46201566601338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI3JzQzLjMiTiAwwrAwNic0NS4wIlc!5e0!3m2!1sen!2sdz!4v1631008941547!5m2!1sen!2sdz" width="400" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div id="top">
+                <div>
+                    <h4>Company</h4>
+                    <p>Contact</p>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <p>Terms And Conditions</p>
+                    <p>Legal Informations</p>
+                </div>
+                <div>
+                    <h4>Keep me updated</h4>
+                    <input class="input-email" type="email" name="email" required placeholder="Email address">
+                    <input class="button" type="button" value="Sign Up">
+                </div>
+            </div>
+            <hr>
+            <d id="bottom">
+                <div>
+                    <h4>Follow Us</h4>
+                    <div>
+                        <i class="fab fa-instagram icon"></i>
+                        <i class="fab fa-twitter icon"></i>
+                        <i class="fab fa-facebook icon"></i>
+                    </div>
+                </div>
+                <div class="brand">
+                    <a href="#home" id="logo"><img src="assets/img/retrowave_sun.png" alt="Retro Food" ></a>
+                    <a href="#home" id="brand">Retro Food</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="assets/js/lib/vanilla-tilt.js"></script>
+	<script type="text/javascript" src="assets/js/retrofood.js"></script>
+</body>
+</html>
