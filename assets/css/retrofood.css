@@ -111,7 +111,7 @@ html {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-size: 100%;
   line-height: 1.6;
   text-rendering: optimizeSpeed;
@@ -151,7 +151,7 @@ ul, ol {
 header {
     width: 100%;
     text-align: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 nav {
@@ -225,7 +225,7 @@ nav li a:hover:not(#brand) {
 
 .banner {
     background: var(--gradient-bg2);
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,7 +307,7 @@ p.accent {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: var(--clr-dark);
 }
 
@@ -342,6 +342,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 .menu-img {
     max-width: 14em;
@@ -788,6 +789,9 @@ section {
 
 
 @media (max-width: 70em) {
+    /* html {
+        overflow-x: hidden;
+    } */
     nav {
         position: relative;
         padding-right: 0px;
@@ -816,6 +820,7 @@ section {
     }
     #home {
         margin-top: -2.75em;
+        padding-bottom: 20px;
     }
     p.accent {
         font-size: clamp(3rem, 5rem, 7rem);
@@ -832,6 +837,7 @@ section {
     #triangle1 {
         margin-top: -1em;
         margin-left: -0.5em;
+        /* padding-bottom: 100px; */
     }
     #triangle2 {
         margin-top: -0.5em;
@@ -898,6 +904,12 @@ section {
     }
 }
 @media (max-width: 41.25em) {
+    html {
+        overflow-x: hidden;
+    }
+    #home {
+        padding-bottom: 20px;
+    }
     p.accent {
         font-size: clamp(3rem, 4rem, 5rem);
         margin-top: -1em;
